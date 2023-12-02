@@ -22,13 +22,7 @@ git clone https://github.com/rolemadelen/simple-dictionary.git
 
 Move to `simple-dictionary/typescript/` directory.
 
-#### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### Compilation
+#### 2. Compile TypeScript Code
 
 To compile the TypeScript files to JavaScript, run the following command:
 

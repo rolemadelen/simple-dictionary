@@ -20,13 +20,7 @@ git clone https://github.com/rolemadelen/simple-dictionary.git
 
 `simple-dictionary/typescript/` ディレクトリに移動してください。
 
-#### 2. 依存関係のインストール
-
-```sh
-npm install
-```
-
-### コンパイル
+#### 2. コンパイル
 
 TypeScript ファイルを JavaScript にコンパイルするには、次のコマンドを実行します。
 
