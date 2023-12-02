@@ -17,10 +17,10 @@ Follow these instructions to compile and run the JavaScript file.
 #### 1. Clone the repository
 
 ```bash
-git clone git@github.com:rolemadelen/simple-dictionary.git
+git clone https://github.com/rolemadelen/simple-dictionary.git
 ```
 
-Move to `typescript/` directory.
+Move to `simple-dictionary/typescript/` directory.
 
 #### 2. Install dependencies
 
