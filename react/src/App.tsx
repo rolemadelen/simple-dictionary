@@ -4,6 +4,8 @@ import { useDictionary } from './hooks/useDictionary';
 
 function App() {
   const [word, setWord] = useState('');
+  const [currentWord, setCurrentWord] = useState('');
+
   const {
     isLoading,
     getDefinitions,
@@ -16,14 +18,21 @@ function App() {
 
   const handleWordSearch = (e: FormEvent) => {
     e.preventDefault();
-    const currentTarget = e.target as HTMLFormElement;
-    const input = currentTarget[0] as HTMLInputElement;
-    setWord(input.value);
+    setCurrentWord(word);
 
-    getDefinitions(input.value);
-    getSynonyms(input.value);
-    getAntonyms(input.value);
+    getDefinitions(word);
+    getSynonyms(word);
+    getAntonyms(word);
   };
+
+  const handleWordClick = (word: string) => {
+    setWord(word);
+    setCurrentWord(word);
+    getDefinitions(word);
+    getSynonyms(word);
+    getAntonyms(word);
+  };
+
   return (
     <>
       <form
@@ -33,19 +42,20 @@ function App() {
         <input
           type='text'
           id='wordInput'
+          value={word}
+          onChange={(e) => setWord(e.target.value)}
         />
         <button type='submit'>Search</button>
       </form>
 
-      {isLoading && (
+      {isLoading ? (
         <div>
           <h2>ロディングしてます。。。</h2>
         </div>
-      )}
-      {!isLoading && (
+      ) : (
         <>
           <div id='definition'>
-            <h1>{word}</h1>
+            <h1>{currentWord}</h1>
             <ol role='list'>
               {definitions &&
                 definitions.map((def, index) => <li key={index}>{def}</li>)}
@@ -57,7 +67,11 @@ function App() {
               <h3>Synonym</h3>
               <ul role='list'>
                 {synonyms.map((syn) => (
-                  <li key={syn.word}>{syn.word}</li>
+                  <li
+                    key={syn.word}
+                    onClick={() => handleWordClick(syn.word)}>
+                    {syn.word}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -68,7 +82,11 @@ function App() {
               <h3>Antonym</h3>
               <ul role='list'>
                 {antonyms.map((ant) => (
-                  <li key={ant.word}>{ant.word}</li>
+                  <li
+                    key={ant.word}
+                    onClick={() => handleWordClick(ant.word)}>
+                    {ant.word}
+                  </li>
                 ))}
               </ul>
             </div>
