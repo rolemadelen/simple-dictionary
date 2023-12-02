@@ -33,6 +33,8 @@ function getSynonymOrAntonym(arr, id) {
 }
 
 function fetchWordData(word) {
+  const definition = document.getElementById('definition');
+
   fetchDefinition(word).then((defs) => {
     const olElement = definition.children[1];
     olElement.innerHTML = '';
