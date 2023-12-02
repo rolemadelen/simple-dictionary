@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Simple Dictionary</title>
+    <link
+      href="style.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <form id="form">
+        <label for="wordInput">Word</label>
+        <input
+          id="wordInput"
+          type="text" />
+        <button type="submit">Search</button>
+      </form>
+
+      <div id="definition">
+        <h1></h1>
+        <ol></ol>
+      </div>
+
+      <div
+        id="synonym"
+        class="hidden">
+        <h3>Synonym</h3>
+        <ul role="list"></ul>
+      </div>
+
+      <div
+        id="antonym"
+        class="hidden">
+        <h3>Antonym</h3>
+        <ul role="list"></ul>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
