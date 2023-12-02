@@ -1,43 +1,41 @@
 # Simple English Dictionary
 
-[日本語](./README_ja.md)
+## スタートガイド
 
-## Getting Started
-
-### 1. Clone the repository
+### 1. リポジトリのクローン
 
 ```bash
 git clone https://github.com/rolemadelen/simple-dictionary.git
 ```
 
-Move to the project directory.
+プロジェクトディレクトリへ移動。
 
 ```bash
 cd simple-dictionary/react/
 ```
 
-### 2. Install Dependencies
+### 2. Dependecy をインストール
 
 ```bash
 pnpm install
 ```
 
-or
+または
 
 ```bash
 npm install
 ```
 
-### Run the Development Server
-
-Start the development server and open the application in your default browser:
+### 開発サーバを立ち上げる
 
 ```bash
 pnpm run dev
 ```
 
-or
+または
 
 ```bash
 npm run dev
 ```
+
+`localhost:5173`で確認できます。
