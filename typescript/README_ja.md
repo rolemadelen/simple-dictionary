@@ -15,10 +15,10 @@ JavaScript へのコンパイル構成を備えたシンプルな TypeScript プ
 #### 1. リポジトリのクローン
 
 ```bash
-git clone git@github.com:rolemadelen/simple-dictionary.git
+git clone https://github.com/rolemadelen/simple-dictionary.git
 ```
 
-`typescript/` ディレクトリに移動してください。
+`simple-dictionary/typescript/` ディレクトリに移動してください。
 
 #### 2. 依存関係のインストール
 
