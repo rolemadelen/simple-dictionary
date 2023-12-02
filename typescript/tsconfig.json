@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./src",
+    "allowJs": true,
+    "target": "es5",
+    "lib": ["es2016", "dom"]
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}
