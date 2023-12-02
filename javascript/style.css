@@ -15,8 +15,10 @@
   max-width: 500px;
 }
 
-#definition ol li {
+#definition ol {
   list-style: none;
+}
+#definition ol li {
   margin-bottom: 4px;
   counter-increment: my-counter;
 }
@@ -30,13 +32,13 @@
 
 #synonym ul,
 #antonym ul {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 
 #synonym ul li,
 #antonym ul li {
-  list-style: none;
   border-radius: 5px;
   margin: 4px;
   padding: 4px 8px;
