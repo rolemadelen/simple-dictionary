@@ -9,11 +9,7 @@ type Word = {
   word: string;
 };
 
-type Definition = {
-  defs: string[];
-  score: number;
-  word: string;
-};
+type Definition = Word & { defs: string[] };
 
 async function fetchDefinition(word: string): Promise<Definition[]> {
   const url = `${BASE_URL}/words?sp=${word}&md=d`;
