@@ -1,0 +1,63 @@
+:root {
+  --synonym-bg: rgb(147, 215, 243);
+  --synonym-bg-hover: #66b4d4;
+  --antonym-bg: rgb(249, 195, 204);
+  --antonym-bg-hover: #e69ba7;
+
+  color: #333;
+}
+
+#root {
+  max-width: 500px;
+}
+
+#definition ol {
+  list-style: none;
+}
+#definition ol li {
+  margin-bottom: 4px;
+  counter-increment: my-counter;
+}
+
+#definition ol li::before {
+  content: counter(my-counter) ') ';
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  color: #777;
+}
+
+#synonym ul,
+#antonym ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#synonym ul li,
+#antonym ul li {
+  border-radius: 5px;
+  margin: 4px;
+  padding: 4px 8px;
+  transition: background-color 0.3s ease;
+}
+
+#synonym ul li {
+  background-color: var(--synonym-bg);
+}
+
+#antonym ul li {
+  background-color: var(--antonym-bg);
+}
+
+#synonym ul li:hover,
+#antonym ul li:hover {
+  cursor: pointer;
+}
+
+#synonym ul li:hover {
+  background-color: var(--synonym-bg-hover);
+}
+
+#antonym ul li:hover {
+  background-color: var(--antonym-bg-hover);
+}
