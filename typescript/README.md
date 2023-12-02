@@ -2,19 +2,11 @@
 
 [日本語](./README_ja.md)
 
-A simple TypeScript project with configuration for compilation to JavaScript.
-
-## Getting Started
-
 Follow these instructions to compile and run the JavaScript file.
 
-### Prerequisites
+## Installation
 
-- [Node.js](https://nodejs.org/) installed.
-
-### Installation
-
-#### 1. Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/rolemadelen/simple-dictionary.git
@@ -22,7 +14,7 @@ git clone https://github.com/rolemadelen/simple-dictionary.git
 
 Move to `simple-dictionary/typescript/` directory.
 
-#### 2. Compile TypeScript Code
+### 2. Compile TypeScript Code
 
 To compile the TypeScript files to JavaScript, run the following command:
 
